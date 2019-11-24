@@ -16,4 +16,9 @@ describe('String Template', () => {
         expect(merged).to.equal("serverless-blueprint");
     });
 
+    it('should return an output where a placeholder in the template is replaced with value', () => {
+        let stringTemplate = new StringTemplate("{{project}} is awesome");
+        let merged: string = stringTemplate.mergeWith({"project": "serverless-blueprint"});
+        expect(merged).to.equal("serverless-blueprint is awesome");
+    });
 });
