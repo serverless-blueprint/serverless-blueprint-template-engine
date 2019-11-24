@@ -28,6 +28,7 @@ let merged: string = stringTemplate.mergeWith({
         "name": "serverless-blueprint"
     }
 });
+
 merged === "serverless-blueprint is awesome";
 ```  
 
@@ -42,5 +43,6 @@ import {StringTemplate} from "src/org/blueprint/serverless/template/engine/Strin
 
 let stringTemplate = new StringTemplate("{{project}} is awesome");
 let merged: string = stringTemplate.mergeWith({});
+
 merged === " is awesome";
 ```
