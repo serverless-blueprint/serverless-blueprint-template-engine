@@ -1,0 +1,25 @@
+{
+  "name": "serverless-blueprint-template-engine",
+  "version": "1.0.0",
+  "description": "Template engine implementation for serverless-blueprint modules.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverless-blueprint/serverless-blueprint-template-engine.git"
+  },
+  "author": "Sarthak Makhija",
+  "bugs": {
+    "url": "https://github.com/serverless-blueprint/serverless-blueprint-template-engine/issues"
+  },
+  "homepage": "https://github.com/serverless-blueprint/serverless-blueprint-template-engine#readme",
+  "dependencies": {
+    "@types/squirrelly": "^7.1.0",
+    "squirrelly": "^7.9.0"
+  },
+  "scripts": {
+    "test": "mocha test/**/*"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
