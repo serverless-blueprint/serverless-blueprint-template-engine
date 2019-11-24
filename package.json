@@ -17,6 +17,7 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
+    "build": "tsc",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "devDependencies": {
