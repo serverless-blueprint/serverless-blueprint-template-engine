@@ -31,7 +31,7 @@ describe('String Template', () => {
         expect(merged).to.equal("serverless-blueprint is awesome for generating AWS applications");
     });
 
-    it('should return an output where placeholder is replaced with blank given no value is provided for placeholder', () => {
+    it('should return an output where a placeholder is replaced with blank given no value is provided for placeholder', () => {
         let stringTemplate = new StringTemplate("{{project}} is awesome");
         let merged: string = stringTemplate.mergeWith({});
         expect(merged).to.equal(" is awesome");
@@ -47,7 +47,7 @@ describe('String Template', () => {
         expect(merged).to.equal("serverless-blueprint is awesome");
     });
 
-    it('should return an output where placeholder is replaced with blank given no value is provided for nested placeholder', () => {
+    it('should return an output where a placeholder is replaced with blank given no value is provided for nested placeholder', () => {
         let stringTemplate = new StringTemplate("{{project.name}} is awesome");
         let merged: string = stringTemplate.mergeWith({
             "project": {}

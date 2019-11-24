@@ -1,12 +1,12 @@
 import * as Mustache from 'Mustache';
 
-type PlaceholderOptions = { [key: string]: any }
+type Placeholders = { [key: string]: any }
 
 export class StringTemplate {
     constructor(private template: string) {
     }
 
-    mergeWith(options: PlaceholderOptions): string {
-        return Mustache.render(this.template, options);
+    mergeWith(placeholders: Placeholders): string {
+        return Mustache.render(this.template, placeholders);
     }
 }
