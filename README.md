@@ -17,7 +17,7 @@ merged === "serverless-blueprint is awesome";
 
 1. How do I pass nested placeholders
 
-**Usage**
+**Example**
 
 ```typescript
 import {StringTemplate} from "src/org/blueprint/serverless/template/engine/StringTemplate";
@@ -32,7 +32,10 @@ merged === "serverless-blueprint is awesome";
 ```  
 
 2.  What happens if the placeholder is missing?
+
 Output will be rendered with blank value for missing placeholders
+
+**Example**
 
 ```typescript
 import {StringTemplate} from "src/org/blueprint/serverless/template/engine/StringTemplate";
