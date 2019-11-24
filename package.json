@@ -12,8 +12,8 @@
   },
   "homepage": "https://github.com/serverless-blueprint/serverless-blueprint-template-engine#readme",
   "dependencies": {
-    "@types/squirrelly": "^7.1.0",
-    "squirrelly": "^7.9.0",
+    "@types/mustache": "^0.8.32",
+    "mustache": "^3.1.0",
     "typescript": "^3.7.2"
   },
   "scripts": {

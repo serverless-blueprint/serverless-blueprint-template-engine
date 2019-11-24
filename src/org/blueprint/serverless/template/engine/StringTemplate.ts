@@ -1,10 +1,10 @@
-import * as Sqrl from 'squirrelly';
+import * as Mustache from 'Mustache';
 
 export class StringTemplate {
     constructor(private template: string) {
     }
 
     mergeWith(options: {}): string {
-        return Sqrl.Render(this.template, options);
+        return Mustache.render(this.template, options);
     }
 }
