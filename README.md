@@ -3,6 +3,10 @@ Template engine implementation for serverless-blueprint modules.
 
 ### Getting Started
 
+* Import ```StringTemplate``` class
+* Create an instance of ```StringTemplate``` class with template as a parameter
+* Invoke ```mergeWith``` method passing the template placeholders 
+
 ```typescript
 import {StringTemplate} from "src/org/blueprint/serverless/template/engine/StringTemplate";
 
@@ -15,7 +19,7 @@ merged === "serverless-blueprint is awesome";
 
 ### FAQs
 
-1. **How do I pass nested placeholders**
+1. **How do I pass a nested placeholder?**
 
 **Example**
 
@@ -32,9 +36,10 @@ let merged: string = stringTemplate.mergeWith({
 merged === "serverless-blueprint is awesome";
 ```  
 
-2. **What happens if the placeholder is missing?**
 
-Output will be generated with blank value for missing placeholder(s)
+2. **What happens if a placeholder is missing?**
+
+Output will be generated with blank value for missing placeholder(s).
 
 **Example**
 
@@ -47,9 +52,10 @@ let merged: string = stringTemplate.mergeWith({});
 merged === " is awesome";
 ```
 
-3. **What happens if nested placeholder is missing?**
 
-Output will be generated with blank value for missing nested placeholder(s)
+3. **What happens if a nested placeholder is missing?**
+
+Output will be generated with blank value for missing nested placeholder(s).
 
 **Example**
 
