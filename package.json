@@ -17,7 +17,7 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.2.5",
