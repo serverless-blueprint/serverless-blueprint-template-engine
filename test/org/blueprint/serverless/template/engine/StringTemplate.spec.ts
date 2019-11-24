@@ -30,4 +30,10 @@ describe('String Template', () => {
         });
         expect(merged).to.equal("serverless-blueprint is awesome for generating AWS applications");
     });
+
+    it('should return an output where placeholder is replaced with blank given no value is provided for placeholder', () => {
+        let stringTemplate = new StringTemplate("{{project}} is awesome");
+        let merged: string = stringTemplate.mergeWith({});
+        expect(merged).to.equal(" is awesome");
+    });
 });
