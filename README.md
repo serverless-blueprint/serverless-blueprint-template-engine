@@ -15,7 +15,7 @@ merged === "serverless-blueprint is awesome";
 
 ### FAQs
 
-1. How do I pass nested placeholders
+1. **How do I pass nested placeholders**
 
 **Example**
 
@@ -31,7 +31,7 @@ let merged: string = stringTemplate.mergeWith({
 merged === "serverless-blueprint is awesome";
 ```  
 
-2.  What happens if the placeholder is missing?
+2. **What happens if the placeholder is missing?**
 
 Output will be rendered with blank value for missing placeholders
 
