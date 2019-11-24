@@ -34,7 +34,7 @@ merged === "serverless-blueprint is awesome";
 
 2. **What happens if the placeholder is missing?**
 
-Output will be rendered with blank value for missing placeholders
+Output will be generated with blank value for missing placeholders
 
 **Example**
 
@@ -49,7 +49,7 @@ merged === " is awesome";
 
 3. **What happens if nested placeholder is missing?**
 
-Output will be rendered with blank value for missing nested placeholder
+Output will be generated with blank value for missing nested placeholder
 
 **Example**
 
