@@ -46,3 +46,20 @@ let merged: string = stringTemplate.mergeWith({});
 
 merged === " is awesome";
 ```
+
+3. **What happens if nested placeholder is missing?**
+
+Output will be rendered with blank value for missing nested placeholder
+
+**Example**
+
+```typescript
+import {StringTemplate} from "src/org/blueprint/serverless/template/engine/StringTemplate";
+
+let stringTemplate = new StringTemplate("{{project.name}} is awesome");
+let merged: string = stringTemplate.mergeWith({
+    "project": {}
+});
+
+merged === " is awesome";
+```
