@@ -21,4 +21,13 @@ describe('String Template', () => {
         let merged: string = stringTemplate.mergeWith({"project": "serverless-blueprint"});
         expect(merged).to.equal("serverless-blueprint is awesome");
     });
+
+    it('should return an output where multiple placeholders in the template are replaced with values', () => {
+        let stringTemplate = new StringTemplate("{{project}} is awesome for generating {{cloud_vendor}} applications");
+        let merged: string = stringTemplate.mergeWith({
+            "project": "serverless-blueprint",
+            "cloud_vendor": "AWS"
+        });
+        expect(merged).to.equal("serverless-blueprint is awesome for generating AWS applications");
+    });
 });
