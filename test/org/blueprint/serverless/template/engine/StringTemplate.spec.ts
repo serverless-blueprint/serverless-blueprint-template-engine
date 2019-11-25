@@ -54,4 +54,31 @@ describe('String Template', () => {
         });
         expect(merged).to.equal(" is awesome");
     });
+
+    it('should return an output given a template with a single sub-template include', () => {
+        let projectTemplateInclude = "<strong>{{name}}</strong>";
+        let template = "<h2>Name</h2> {{>project}}";
+
+        let stringTemplate = new StringTemplate(template);
+
+        let merged: string = stringTemplate.mergeWith({"name": "serverless-blueprint"},
+                                                         {"project": projectTemplateInclude});
+
+        expect(merged).to.equal("<h2>Name</h2> <strong>serverless-blueprint</strong>");
+    });
+
+    it('should return an output given a template with multiple sub-template includes', () => {
+        let projectTemplateInclude = "<strong>{{name}}</strong>";
+        let descriptionTemplateInclude = "is awesome";
+
+        let template = "<h2>Name</h2> {{>project}} {{>description}}";
+        let stringTemplate = new StringTemplate(template);
+
+        let merged: string = stringTemplate.mergeWith({"name": "serverless-blueprint"},
+                                                         {"project": projectTemplateInclude,
+                                                                  "description": descriptionTemplateInclude
+                                                                 });
+
+        expect(merged).to.equal("<h2>Name</h2> <strong>serverless-blueprint</strong> is awesome");
+    });
 });
