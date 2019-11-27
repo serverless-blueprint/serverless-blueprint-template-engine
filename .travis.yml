@@ -3,6 +3,7 @@ node_js:
   - node
 before_script:
   - npm install -g typescript
+  - npm install -g codecov
   - npm i
 script:
   - npm test

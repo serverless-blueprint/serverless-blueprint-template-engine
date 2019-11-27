@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "nyc --reporter=html --reporter=lcov --reporter=text mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "nyc --reporter=html --reporter=lcov --reporter=text mocha -r ts-node/register test/**/*.spec.ts",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "devDependencies": {
     "@types/chai": "^4.2.5",
