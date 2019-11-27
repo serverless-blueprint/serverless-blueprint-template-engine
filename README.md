@@ -1,4 +1,4 @@
-## serverless-blueprint-template-engine [![Build Status](https://travis-ci.org/serverless-blueprint/serverless-blueprint-template-engine.svg?branch=master)](https://travis-ci.org/serverless-blueprint/serverless-blueprint-template-engine)
+## serverless-blueprint-template-engine [![Build Status](https://travis-ci.org/serverless-blueprint/serverless-blueprint-template-engine.svg?branch=master)](https://travis-ci.org/serverless-blueprint/serverless-blueprint-template-engine) [![codecov](https://codecov.io/gh/serverless-blueprint/serverless-blueprint-template-engine/branch/master/graph/badge.svg)](https://codecov.io/gh/serverless-blueprint/serverless-blueprint-template-engine)
 Template engine implementation for serverless-blueprint modules.
 
 ### Getting Started
